@@ -1,0 +1,10 @@
+/* Home.html */
+.hero-background-img {
+    /*background-image: url("./images/hobbit-hole.jpg");*/
+    background-image:
+    linear-gradient(to left, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
+    url("./images/hobbit-hole.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
