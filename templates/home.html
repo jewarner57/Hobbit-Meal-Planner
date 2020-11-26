@@ -16,7 +16,7 @@
 
 <!-- BENEFITS -->
 <section>
-    <div class="text-center pt-5 pb-2 bg-light col-12">
+    <div class="text-center pt-5 pb-2 bg-gray col-12">
         <h2>The best place to plan your hobbit feast.</h2>
         <div class="col-10 offset-1 mt-5">
             <div class="row">
@@ -73,7 +73,7 @@
 
 <section>
     <div class="text-center">
-        <div class="bg-white text-dark pt-5">
+        <div class="bg-white text-dark py-5">
             <div class="offset-3 col-6">
                 <h1>Build Your Meal Plan Now</h1>
                 <a href="/createPlan" class="btn btn-primary mt-3">Get Started</a>
@@ -84,8 +84,29 @@
 
 <!-- Feedback Form -->
 <section>
-    <div class="container text-left pt-5">
-        <p class="">Feedback</p>
+    <div class="text-left py-5 bg-gray col-12">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+            <form method='POST'>
+                <p class="display-5">Feedback</p>
+                <hr>
+                <fieldset>
+                    <label for="email" class="ml-3">Email Adress</label>
+                    <input id="email" class="neo_input" type="text" placeholder="Your-email@example.com"
+                        required="true" />
+
+                    <label for=" name" class="ml-3 mt-4">Name</label>
+                    <input id="name" class="neo_input" type="text" placeholder="John Doe" required="true" />
+
+                    <label for="message" class="ml-3 mt-4">Message</label>
+                    <textarea class="neo_input" id="message" placeholder="What do you want to say?"
+                        required="true"></textarea>
+                    <div class="col-4 offset-4">
+                        <input type="submit" value="Send Feedback" class="neo_submit mt-3" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
     </div>
 </section>
 

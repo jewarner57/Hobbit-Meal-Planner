@@ -8,3 +8,40 @@
     background-size: cover;
     background-position: center;
 }
+
+.neo_input {
+    width: 16px;
+    box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
+    width: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 16px;
+    background-color: #EBECF0;
+    text-shadow: 1px 1px 0 #FFF;
+}
+
+.neo_submit {
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    border-radius: 20px;
+    padding: 16px;
+    border:0;
+    background-color: #EBECF0;
+    background-image: linear-gradient(to right, #b1dff1 , #82e8ac);;
+    padding: 15px 40px;
+}
+
+textarea {
+    resize:none;
+    height: 12.5em;
+}
+
+.bg-gray {
+    background-color: #EBECF0;
+}
+
+.display-5 {
+    font-size: 2em;
+}
