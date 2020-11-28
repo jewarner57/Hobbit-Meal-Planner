@@ -1,6 +1,30 @@
+/* Base.html */
+html, body {
+    height: 100%;
+}
+
+.bg-gray {
+    background-color: #EBECF0;
+}
+
+.bg-darkgray {
+    background-color: rgb(185, 185, 184);
+}
+
+.text-md {
+    color: #c2c1c1;
+}
+
+.display-5 {
+    font-size: 2em;
+}
+
+.page {
+    box-shadow: 3px 3px 15px black;
+}
+
 /* Home.html */
 .hero-background-img {
-    /*background-image: url("./images/hobbit-hole.jpg");*/
     background-image:
     linear-gradient(to left, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1)),
     url("./images/hobbit-hole.jpg");
@@ -23,14 +47,23 @@
     text-shadow: 1px 1px 0 #FFF;
 }
 
+.neo_input:focus {
+    box-shadow:  inset 2px 2px 5px  #b1dff1, inset -5px -5px 10px #82e8ac;
+}
+
 .neo_submit {
-    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    box-shadow: -6px -6px 20px #fff,  5px 5px 20px #BABECC;
     border-radius: 20px;
     padding: 16px;
     border:0;
     background-color: #EBECF0;
     background-image: linear-gradient(to right, #b1dff1 , #82e8ac);;
     padding: 15px 40px;
+    color: rgb(58, 58, 58);
+}
+
+.neo_submit:hover {
+    box-shadow: -2px -2px 20px #fff,  2px 2px 20px #BABECC;
 }
 
 textarea {
@@ -38,10 +71,18 @@ textarea {
     height: 12.5em;
 }
 
-.bg-gray {
-    background-color: #EBECF0;
+/* Create Plan */
+
+.create-plan-image {
+    background-image:
+    linear-gradient(to top, rgb(0, 0, 0, 0), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1)),
+    url("./images/feast2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.display-5 {
-    font-size: 2em;
+.neo_selector {
+    background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right;
+    -webkit-appearance: none;
+    background-position-x: 95%;
 }

@@ -1,11 +1,14 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, request
 
 plan = Blueprint("plan", __name__, template_folder="templates")
 
 
-@plan.route("/createPlan")
+@plan.route("/createPlan", methods=["GET", "POST"])
 def createPlan():
-    return render_template("createPlan.html")
+    if request.method == "GET":
+        return render_template("createPlan.html")
+    else:
+        return "post recieved"
 
 
 @plan.route("/viewPlan")

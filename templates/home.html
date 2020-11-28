@@ -83,22 +83,22 @@
 </section>
 
 <!-- Feedback Form -->
-<section>
+<section id="feedback">
     <div class="text-left py-5 bg-gray col-12">
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-            <form method='POST'>
+            <form method='POST' action="/feedback">
                 <p class="display-5">Feedback</p>
                 <hr>
                 <fieldset>
                     <label for="email" class="ml-3">Email Adress</label>
-                    <input id="email" class="neo_input" type="text" placeholder="Your-email@example.com"
+                    <input id="email" class="neo_input" name="email" type="text" placeholder="Your-email@example.com"
                         required="true" />
 
                     <label for=" name" class="ml-3 mt-4">Name</label>
-                    <input id="name" class="neo_input" type="text" placeholder="John Doe" required="true" />
+                    <input id="name" class="neo_input" name="name" type="text" placeholder="John Doe" required="true" />
 
                     <label for="message" class="ml-3 mt-4">Message</label>
-                    <textarea class="neo_input" id="message" placeholder="What do you want to say?"
+                    <textarea class="neo_input" id="message" name="message" placeholder="What do you want to say?"
                         required="true"></textarea>
                     <div class="col-4 offset-4">
                         <input type="submit" value="Send Feedback" class="neo_submit mt-3" />
