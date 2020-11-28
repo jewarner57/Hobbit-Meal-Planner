@@ -13,4 +13,4 @@ def createPlan():
 
 @plan.route("/viewPlan")
 def viewPlan():
-    return render_template("view-plan.html")
+    return render_template("viewPlan.html")
