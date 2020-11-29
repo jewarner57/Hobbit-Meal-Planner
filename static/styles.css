@@ -98,3 +98,9 @@ textarea {
     -webkit-appearance: none;
     background-position-x: 95%;
 }
+
+/* View Plan */
+
+.recipe-image {
+    box-shadow: 3px 3px 15px black;
+}

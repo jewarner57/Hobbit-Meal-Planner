@@ -1,87 +1,34 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<section>
+<section class="bg-gray pb-5">
     <div class="container col-lg-8 offset-lg-2">
         <p class="display-5 text-center">View Plan</p>
-
+        {% for mealNumber in range(mealNames|length) %}
         <div class="card my-4">
-            <div class="card-header">
-                Beakfast - (7:00 am)
+            <div class="card-header display-5">
+                {{mealNames[mealNumber]}}
             </div>
             <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
+                <div class="row mb-4">
+                    <div class="col-md-6 col-12">
+                        <h5 class="card-title">{{response[mealNumber].title}}</h5>
+                        <p class="card-text">{{response[mealNumber].summary|safe}}...</p>
+                    </div>
+                    <div class="col-md-6 col-12 mt-4 p-0 d-flex justify-content-center">
+                        <div>
+                            <img src="https://spoonacular.com/recipeImages/{{response[mealNumber].id}}-312x231.jpg"
+                                class="recipe-image" />
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <a href="{{response[mealNumber].sourceUrl}}" target="blank" class="btn btn-primary">See
+                        Recipe</a>
+                </div>
             </div>
         </div>
-
-        <div class="card my-4">
-            <div class="card-header">
-                Second Beakfast - (9:00 am)
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
-            </div>
-        </div>
-
-        <div class="card my-4">
-            <div class="card-header">
-                Elevenses - (11:00 am)
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
-            </div>
-        </div>
-
-        <div class="card my-4">
-            <div class="card-header">
-                Luncheon - (1:00 pm)
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
-            </div>
-        </div>
-
-        <div class="card my-4">
-            <div class="card-header">
-                Afternoon Tea - (3:00 pm)
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
-            </div>
-        </div>
-
-        <div class="card my-4">
-            <div class="card-header">
-                Dinner - (6:00 pm)
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
-            </div>
-        </div>
-
-        <div class="card my-4">
-            <div class="card-header">
-                Supper - (9:00 pm)
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Food Name</h5>
-                <p class="card-text">Food Description</p>
-                <a href="#" class="btn btn-primary">See Recipe</a>
-            </div>
-        </div>
-    </div>
+        {% endfor %}
 </section>
 
 {% endblock content %}
