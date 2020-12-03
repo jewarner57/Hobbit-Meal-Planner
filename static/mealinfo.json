@@ -2,10 +2,10 @@
     "meals": [
         "Breakfast - (7:00 am)",
         "Second Breakfast - (9:00 am)",
-        "Breakfast - (7:00 am)",
-        "Breakfast - (7:00 am)",
-        "Breakfast - (7:00 am)",
-        "Breakfast - (7:00 am)",
-        "Breakfast - (7:00 am)"
+        "Elevenses - (11:00 am)",
+        "Luncheon - (1:00 pm)",
+        "Afternoon Tea - (3:00 pm)",
+        "Dinner - (7:00 pm)",
+        "Supper - (7:00 pm)"
     ]
 }
