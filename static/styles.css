@@ -46,6 +46,7 @@ footer {
 }
 
 .neo_input {
+    height: 56px;
     width: 16px;
     box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
     width: 100%;

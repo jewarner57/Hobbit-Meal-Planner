@@ -35,9 +35,14 @@
 
                             <!-- max sugar -->
                             <label for="sugar" class="ml-3 mt-4">Set the max grams of sugar in your plan.</label>
-                            <input id="sugar" class="neo_input" type="number" name="sugar"
-                                placeholder="Less than 75g is recommended" />
-
+                            <div class="input-group mb-3">
+                                <input type="number" id="sugar" class="form-control neo_input"
+                                    placeholder="Less than 75 is recommended" name="sugar" aria-label="Max Sugar Amount"
+                                    aria-describedby="basic-addon2">
+                                <div class="input-group-append">
+                                    <span class="input-group-text neo_input" id="basic-addon2">grams</span>
+                                </div>
+                            </div>
 
                             <!-- allergens -->
                             <label for="allergy" class="ml-3 mt-4">List all food allergies seperated by a
